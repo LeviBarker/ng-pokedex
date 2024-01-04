@@ -1,0 +1,6 @@
+<div *ngIf="pokemon" class="pokemon-list-item">
+  <div class="pokemon-list-item-title-container">
+    <span class="pokemon-list-item-title">No. {{ pokemon.number }} {{ pokemon.name | titlecase }}</span>
+  </div>
+  <img [src]="pokemon.image" [alt]="pokemon.name + ' image'"/>
+</div>
