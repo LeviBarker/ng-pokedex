@@ -36,7 +36,7 @@ export class PokemonService {
       return {
         ...result,
         number: pokeDexNumber,
-        image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/${pokeDexNumber}.png`
+        image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${pokeDexNumber}.gif`
       }
     })
   }

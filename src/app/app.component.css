@@ -5,6 +5,25 @@
   padding: 16px 16px 16px 32px;
 }
 
+.pokemon-list-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container > input {
+  padding: 8px;
+  border: 1px solid black;
+  background: transparent;
+}
+
 .app-container {
   background: #0088e0;
   background: linear-gradient(0deg, #58d0ee, #60e5ec);

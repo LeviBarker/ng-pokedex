@@ -3,8 +3,11 @@
     <img src="assets/pikachu.svg" height="64px"/>
     <h1>ng-pokédex</h1>
   </div>
+  <div class="search-container">
+    <input [(ngModel)]="search" placeholder="Search" />
+  </div>
   <div *ngIf="pokemonListResponse$ | async as pokemonListResponse" class="pokemon-list-container">
-    <div *ngFor="let pokemon of pokemonListResponse.results">
+    <div *ngFor="let pokemon of (pokemonListResponse.results | filter:search)">
       <app-pokemon-list-item [pokemon]="pokemon"></app-pokemon-list-item>
     </div>
   </div>
